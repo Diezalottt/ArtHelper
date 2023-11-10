@@ -1,0 +1,40 @@
+2023-11-10 03:47:43,775 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-11-10 03:47:51,985 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-11-10 03:47:52,989 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2023-11-10 03:47:52,991 - DEBUG - load_verify_locations cafile='C:\\Users\\ckvam\\ArtHelper\\drawing-assistant-backend\\Lib\\site-packages\\certifi\\cacert.pem'
+2023-11-10 03:47:53,286 - DEBUG - Request options: {'method': 'post', 'url': '/audio/speech', 'files': None, 'json_data': {'input': "Life advice can come in many forms, and what resonates best can depend on a person's individual circumstances and goals. However, here are some universal pieces of advice that might be helpful:\n\n1. **Prioritize Self-Care**: Take care of your physical, mental, and emotional health. This can mean getting regular exercise, eating well, getting enough rest, and finding time to relax and decompress.\n\n2. **Continuous Learning**: Strive to keep learning new things, whether they relate to", 'model': 'tts-1', 'voice': 'fable'}}
+2023-11-10 03:47:53,297 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2023-11-10 03:47:53,336 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B0B2562510>
+2023-11-10 03:47:53,336 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001B0B250A3C0> server_hostname='api.openai.com' timeout=5.0
+2023-11-10 03:47:53,346 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B0B269F850>
+2023-11-10 03:47:53,347 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2023-11-10 03:47:53,347 - DEBUG - send_request_headers.complete
+2023-11-10 03:47:53,347 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2023-11-10 03:47:53,347 - DEBUG - send_request_body.complete
+2023-11-10 03:47:53,348 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2023-11-10 03:47:54,183 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 10 Nov 2023 11:47:55 GMT'), (b'Content-Type', b'audio/mpeg'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-w7ujhcbk66ci9xy5dicpktyb'), (b'openai-processing-ms', b'760'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'50'), (b'x-ratelimit-remaining-requests', b'49'), (b'x-ratelimit-reset-requests', b'1.2s'), (b'x-request-id', b'4d768f7edcf9cea23a4899bcd0d49819'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Qsm34FOVszgkyDtXeZjxDHd0xXvZAHRwkbIfRNf.Q7Y-1699616875-0-AaNxsHIQfGrNt2r2UBgByfXJ3O+/mDgJkqgYSc43Vu1MgUVL3epWaH5hUVrWEuwJfoAsV9Ilizxsw44JYs8B1B4=; path=/; expires=Fri, 10-Nov-23 12:17:55 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'823e10381a9dc3dc-SEA'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2023-11-10 03:47:54,184 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2023-11-10 03:47:54,184 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2023-11-10 03:47:59,200 - DEBUG - receive_response_body.complete
+2023-11-10 03:47:59,200 - DEBUG - response_closed.started
+2023-11-10 03:47:59,200 - DEBUG - response_closed.complete
+2023-11-10 03:47:59,201 - DEBUG - HTTP Request: POST https://api.openai.com/v1/audio/speech "200 OK"
+2023-11-10 03:48:35,471 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2023-11-10 03:48:35,472 - DEBUG - load_verify_locations cafile='C:\\Users\\ckvam\\ArtHelper\\drawing-assistant-backend\\Lib\\site-packages\\certifi\\cacert.pem'
+2023-11-10 03:48:35,789 - DEBUG - Request options: {'method': 'post', 'url': '/audio/transcriptions', 'headers': {'Content-Type': 'multipart/form-data'}, 'files': [('file', SerializationIterator(index=0, iterator=<_io.BufferedReader name='C:/Users/ckvam/ArtHelper\\sessions\\session 20\\user_query.wav'>))], 'json_data': {'model': 'whisper-1', 'response_format': 'text'}}
+2023-11-10 03:48:35,857 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2023-11-10 03:48:35,892 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B0B26D6090>
+2023-11-10 03:48:35,892 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001B0B250A570> server_hostname='api.openai.com' timeout=5.0
+2023-11-10 03:48:35,902 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B0B26D6150>
+2023-11-10 03:48:35,902 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2023-11-10 03:48:35,902 - DEBUG - send_request_headers.complete
+2023-11-10 03:48:35,902 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2023-11-10 03:48:35,936 - DEBUG - send_request_body.complete
+2023-11-10 03:48:35,936 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2023-11-10 03:48:36,993 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 10 Nov 2023 11:48:37 GMT'), (b'Content-Type', b'text/plain; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-w7ujhcbk66ci9xy5dicpktyb'), (b'openai-processing-ms', b'517'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'50'), (b'x-ratelimit-remaining-requests', b'49'), (b'x-ratelimit-reset-requests', b'1.2s'), (b'x-request-id', b'dbf7bca7d23b007fb259f7d4e39a93f7'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=uaaDNB.caQHsRXH_MgCHmXMfHOpAaMbFFPucB_m0i6E-1699616917-0-AZnRFTiP57A47ffNQI2V2iLJfCq0TPYjf0bY91QN5Vj4jlae+9wzSImKS9tB8dtSlKgoqTS1fu9pErHs7DELWQs=; path=/; expires=Fri, 10-Nov-23 12:18:37 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'823e1142186b2760-SEA'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2023-11-10 03:48:36,993 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2023-11-10 03:48:36,994 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2023-11-10 03:48:36,994 - DEBUG - receive_response_body.complete
+2023-11-10 03:48:36,994 - DEBUG - response_closed.started
+2023-11-10 03:48:36,994 - DEBUG - response_closed.complete
+2023-11-10 03:48:36,994 - DEBUG - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "200 OK"

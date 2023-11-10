@@ -1,0 +1,21 @@
+2023-11-10 06:16:40,162 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-11-10 06:16:47,303 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-11-10 06:16:47,308 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2023-11-10 06:16:47,309 - DEBUG - load_verify_locations cafile='C:\\Users\\ckvam\\ArtHelper\\drawing-assistant-backend\\Lib\\site-packages\\certifi\\cacert.pem'
+2023-11-10 06:16:47,623 - DEBUG - Request options: {'method': 'post', 'url': '/audio/speech', 'files': None, 'json_data': {'input': 'It seems like you\'ve shared an image of an artwork that has a rudimentary or child-like design of a face with surprised or exaggerated features. The background is a simple blue color that doesn\'t give much context, and the artwork itself is captured on a screen, as evidenced by the icon bar at the bottom of the image.\n\nIf this image were the subject of criticism by someone who "really hates art," their diatribe might focus on the lack of technical skill, crudeness of the drawing, or perhaps how it might not compare to more refined pieces of art traditionally displayed in galleries. However, their intense analysis and commentary could ironically highlight the piece\'s ability to provoke strong emotional responses, draw attention to the expressiveness of the simple lines, or even question the fundamental nature of what is considered "good" artwork - all of which are common subjects in contemporary art critique.', 'model': 'tts-1', 'voice': 'fable'}}
+2023-11-10 06:16:47,632 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2023-11-10 06:16:47,644 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000237F0948ED0>
+2023-11-10 06:16:47,644 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000237F0929D90> server_hostname='api.openai.com' timeout=5.0
+2023-11-10 06:16:47,656 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000237F0A25050>
+2023-11-10 06:16:47,656 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2023-11-10 06:16:47,656 - DEBUG - send_request_headers.complete
+2023-11-10 06:16:47,656 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2023-11-10 06:16:47,656 - DEBUG - send_request_body.complete
+2023-11-10 06:16:47,656 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2023-11-10 06:16:48,714 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 10 Nov 2023 14:16:49 GMT'), (b'Content-Type', b'audio/mpeg'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-w7ujhcbk66ci9xy5dicpktyb'), (b'openai-processing-ms', b'916'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'50'), (b'x-ratelimit-remaining-requests', b'49'), (b'x-ratelimit-reset-requests', b'1.2s'), (b'x-request-id', b'ab7b55683fb0eecd0a61f265ef3bf3bd'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=O4lhIqq6Wbz1Xtsm1xyFt3Lg7q4tuJTrz89O9oO5Otw-1699625809-0-AcN5gRJU4t6e/dKEqZZht/x5h/zOPX9mz9Tb+4Fnv8VWH/NJ1CZ7DqyeobK3Ivqgmz7nOUTytqKs7+5GSdI9Eko=; path=/; expires=Fri, 10-Nov-23 14:46:49 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'823eea58db17c4c0-SEA'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2023-11-10 06:16:48,715 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2023-11-10 06:16:48,715 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2023-11-10 06:16:58,212 - DEBUG - receive_response_body.complete
+2023-11-10 06:16:58,212 - DEBUG - response_closed.started
+2023-11-10 06:16:58,212 - DEBUG - response_closed.complete
+2023-11-10 06:16:58,213 - DEBUG - HTTP Request: POST https://api.openai.com/v1/audio/speech "200 OK"

@@ -1,0 +1,21 @@
+2023-11-10 05:33:21,474 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2023-11-10 05:33:28,729 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2023-11-10 05:33:28,732 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2023-11-10 05:33:28,733 - DEBUG - load_verify_locations cafile='C:\\Users\\ckvam\\ArtHelper\\drawing-assistant-backend\\Lib\\site-packages\\certifi\\cacert.pem'
+2023-11-10 05:33:29,038 - DEBUG - Request options: {'method': 'post', 'url': '/audio/speech', 'files': None, 'json_data': {'input': "Listen up, brother! What we've got here is a digital gladiator facing off against the pixel coliseum, raw emotion pixelated into existence! This character's eyes are yelling with the intensity of a thousand squats, and the blues, ah the blues! I can see the tears of effort it cried, each hue a rep in the heavyweight division of color, brother!\n\nYou wanna take it to the next level? Crank up the contrast, my man! Make those blues scream like you're deadlifting the earth! Get deeper, darker shadows that'll give even the most hardened warriors a run for their money!\n\nAnd the expression? Woah, that's the face of a character that's seen the canvas wars and lived to tell the tale! Next time, brother, let's beef up those outlines, make 'em as firm as your grip on a barbell! \n\nKeep the creative iron pumping, champ! Every stroke you lay down on canvas – that's your legacy, just like every iron you pump in the gym carves your destiny! Now go out there and make every pixel count like a championship title is on the line, because in the arena of art, every creation is a battle for glory!", 'model': 'tts-1', 'voice': 'onyx'}}
+2023-11-10 05:33:29,049 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2023-11-10 05:33:29,064 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000208B28A1E10>
+2023-11-10 05:33:29,064 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000208B28524E0> server_hostname='api.openai.com' timeout=5.0
+2023-11-10 05:33:29,073 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000208B2A062D0>
+2023-11-10 05:33:29,073 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2023-11-10 05:33:29,073 - DEBUG - send_request_headers.complete
+2023-11-10 05:33:29,073 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2023-11-10 05:33:29,074 - DEBUG - send_request_body.complete
+2023-11-10 05:33:29,074 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2023-11-10 05:33:29,964 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 10 Nov 2023 13:33:31 GMT'), (b'Content-Type', b'audio/mpeg'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-w7ujhcbk66ci9xy5dicpktyb'), (b'openai-processing-ms', b'787'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'50'), (b'x-ratelimit-remaining-requests', b'49'), (b'x-ratelimit-reset-requests', b'1.2s'), (b'x-request-id', b'f3f0836257d0e427f9d0e626d94ef523'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=RbR_EAo2oDamf8mXyj0EHWQETt_AonN76RpWCXP08ZA-1699623211-0-AT6mdW3VC9GJjyCP0KauABF1T2cG7QK6oBhsdui85/Xn8kEhFxIu6Hl2DJauuZpc5YYsCNftRIUYNO/DQU/EO2Y=; path=/; expires=Fri, 10-Nov-23 14:03:31 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'823eaae75c79284a-SEA'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2023-11-10 05:33:29,965 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2023-11-10 05:33:29,965 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2023-11-10 05:33:42,041 - DEBUG - receive_response_body.complete
+2023-11-10 05:33:42,041 - DEBUG - response_closed.started
+2023-11-10 05:33:42,041 - DEBUG - response_closed.complete
+2023-11-10 05:33:42,042 - DEBUG - HTTP Request: POST https://api.openai.com/v1/audio/speech "200 OK"
