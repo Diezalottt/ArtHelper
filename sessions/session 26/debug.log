@@ -1,2 +1,0 @@
-2023-11-10 04:46:36,203 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2023-11-10 04:46:55,038 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 500 365

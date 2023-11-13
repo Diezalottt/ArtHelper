@@ -1,3 +1,0 @@
-Art Advisor App is now running...
-Image captured successfully.
-Art advisor application stopped manually.
